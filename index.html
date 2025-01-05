@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Produtos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="topo">
+            <figure>
+                <img src="img/logo (1).png" alt="imagem logo">
+            </figure>
+            <span>Alurageek</span>
+        </div>
+    </header>
+    <!-- Lista de Produtos -->
+    <main>
+        <section class="cadastro__produtos">
+            <h1>Adicionar Produto</h1>
+            <div class="inputs">
+                <!-- Formulário de Cadastro -->
+                <form id="formularioProduto">
+                    <input type="text" id="nomeProduto" placeholder="Nome..." required>
+                    <input type="number" id="valorProduto" placeholder="Valor..." required>
+                    <input type="text" id="imagemProduto" placeholder="URL da Imagem..." required>
+                    <div class="btns">
+                        <button class="btn__cadastrar" type="submit">Guardar</button>
+                        <button class="btn__limpar" id="limparTudo">Limpar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="lista__produtos">
+            <h2>Meus Produtos</h2>
+            <div class="cads">
+                <div class="cards"> <!-- Troque <ul> por <div class="cards"> -->
+                    <ul id="listaProdutos"></ul>
+                </div>
+            </div>
+            <div class="sem__produtos">
+                <figure>
+                    <img src="img/image (1).png" alt="imagem emoji" width="100px" height="100px">
+                </figure>
+                <p>Você não possui produtos</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="rodape">
+            <figure>
+                <img src="img/logo (1).png" alt="imagem logo">
+            </figure>
+            <span>Alurageek</span>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
+<!-- echo "# alurageek" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:aricleitonaraujo/alurageek.git
+git push -u origin main -->
